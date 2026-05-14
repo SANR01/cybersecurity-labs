@@ -3,16 +3,12 @@
 ## Objective
 Access the system and retrieve the password for the next level.
 
----
-
 ## Initial Access
 I connected to the remote server using SSH:
 
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 After successful login, I explored the directory structure to understand the environment.
-
----
 
 ## Enumeration
 I used basic Linux commands to list available files:
@@ -21,14 +17,10 @@ ls
 
 A file named `readme` was found in the current directory.
 
----
-
 ## Analysis
 I checked file permissions and content to understand its purpose.
 
 The file contained information relevant to the next level authentication.
-
----
 
 ## Exploitation
 I used the `cat` command to read the file:
@@ -37,18 +29,12 @@ cat readme
 
 The file revealed the required credential for the next level.
 
----
-
 ## Result
 Successfully retrieved the password for the next level.
-
----
 
 ## Challenges Faced
 - Initially unsure which file contained the credential
 - Needed to verify correct usage of basic Linux commands
-
----
 
 ## Learning Outcome
 - Improved understanding of file enumeration in Linux
